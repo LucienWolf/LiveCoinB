@@ -30,7 +30,7 @@ static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED
 
 //TODO Define number of blocks for block size median calculation
 const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
-const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 10000; //size of block (bytes) after which reward for block calculated using block size
+const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 1000; //size of block (bytes) after which reward for block calculated using block size
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
 //TODO Define number of digits
 const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 8;
@@ -73,8 +73,8 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 } // parameters
 
 //TODO Put here the name of your currency
-const char     CRYPTONOTE_NAME[]                             = "Live Coin";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "Live Coin";
+const char     CRYPTONOTE_NAME[]                             = "iLive Coin";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "iLive Coin";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
@@ -85,7 +85,7 @@ const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  200;    //by def
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
 //TODO This port will be used by the daemon to establish connections with p2p network
-const int      P2P_DEFAULT_PORT                              = ;
+const int      P2P_DEFAULT_PORT                              = 17236 ;
 //TODO This port will be used by the daemon to interact with simlewallet
 const int      RPC_DEFAULT_PORT                              = ;
 
